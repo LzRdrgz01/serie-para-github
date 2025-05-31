@@ -503,29 +503,6 @@ synopsis.style.display = 'none';
 button.innerText = 'Ver sinopsis';
 }
 }
-
-  const userAgent = navigator.userAgent;
-  const esPC = !/Mobi|Android|iPad|iPod/i.test(userAgent);
-  const esIphone = /iPhone/i.test(userAgent);
-  const esAndroid = /Android/i.test(userAgent);
-
-  // Detectar parámetro en URL (por si quieres dejar esa opción también)
-  const urlParams = new URLSearchParams(window.location.search);
-  const esAppCreatorParam = urlParams.get('appcreator') === 'true';
-
-  // Detectar si está en WebView (presencia de 'wv') y si contiene 'Vinebre'
-  const esWebView = /\bwv\b/i.test(userAgent);
-  const contieneVinebre = /Vinebre/i.test(userAgent);
-
-  const esAppCreatorUA = esWebView && contieneVinebre;
-
-  window.onload = function () {
-    if (esAndroid && !(esAppCreatorParam || esAppCreatorUA)) {
-      document.body.innerHTML = '';
-      alert('ADVERTENCIA!!! El acceso a esta web está restringido para dispositivos Android fuera de la aplicación oficial. ');
-      document.body.innerHTML = '<h2>Acceso restringido. Usa la aplicación oficial para Android.</h2>';
-    }
-  };
 </script>
 
 </body>
