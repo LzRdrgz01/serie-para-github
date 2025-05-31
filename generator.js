@@ -73,7 +73,7 @@ function generar() {
                         <li class="episode-item" data-video-url="__URL__" data-season="season${seasonNumber}" >
 <img src="https://image.tmdb.org/t/p/w300${episode.still_path}" alt="Thumbnail">
 <div class="episode-info">
-<h3>Episodio - ${episode.episode_number}</h3>
+<h3>Episode ${episode.episode_number}</h3>
 <p>T${seasonNumber} - EP${episode.episode_number}</p>
 </div>
 <div class="toggle">
@@ -504,7 +504,7 @@ button.innerText = 'Ver sinopsis';
 }
 }
 
- const userAgent = navigator.userAgent;
+  const userAgent = navigator.userAgent;
   const esPC = !/Mobi|Android|iPad|iPod/i.test(userAgent);
   const esIphone = /iPhone/i.test(userAgent);
   const esAndroid = /Android/i.test(userAgent);
@@ -527,8 +527,6 @@ button.innerText = 'Ver sinopsis';
     }
   };
 </script>
-
-
 
 </body>
 </html>
