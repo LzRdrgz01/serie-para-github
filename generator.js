@@ -342,7 +342,8 @@ ${episodeList}
 
 <!-- Navegación inferior -->
 <div class="bottom-nav">
-<a  href="https://lzrdrgz01.github.io/apartadoseries/">
+<div class="bottom-nav">
+<a href="https://lzrdrgz01.github.io/BuscadorLzPlay/">
 <i class="fa fa-arrow-left"></i>
 <span>Regresar</span>
 </a>
@@ -350,11 +351,10 @@ ${episodeList}
 <i class="fas fa-home"></i>
 <span>Home</span>
 </a>
-<a href="https://lzrdrgz01.github.io/BuscadorLzPlay/">
-<i class="fas fa-search"></i>
-<span>Buscar Series</span>
+<a href="https://lacinelocuradelzplayhdgratis.blogspot.com/search/label/Movie">
+<i class="fas fa-film"></i>
+<span>Movies</span>
 </a>
-
 </div>
 
 
